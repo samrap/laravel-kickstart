@@ -1,0 +1,53 @@
+/**
+ * Main Sass file
+ *
+ * This file should only be used for importing the core styles and custom
+ * modules. More information about these individual files can be found in their
+ * docblocks.
+ *
+ * Custom CSS modules should be placed in the modules/ directory and imported
+ * at the bottom of this file, while other styles should be placed in their
+ * respective files in the common, components, and layouts directories.
+ *
+ * @author
+ */
+
+/*============================================================================
+Node Modules
+============================================================================*/
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*============================================================================
+Variables and Mixins
+============================================================================*/
+
+@import 'common/_variables';
+@import 'common/_mixins';
+
+/*============================================================================
+Base and Styles and Components
+============================================================================*/
+
+@import 'layouts/_general';
+@import 'common/_global';
+@import 'components/_buttons';
+@import 'components/_forms';
+
+/*============================================================================
+Core Styles
+============================================================================*/
+
+@import 'layouts/_navigation';
+@import 'layouts/_header';
+@import 'layouts/_pages';
+@import 'layouts/_footer';
+@import 'layouts/_responsive';
+
+/*============================================================================
+Custom modules
+
+Import your custom modules from the modules/ directory here.
+
+Example:
+    `@import 'modules/_banner'`
+============================================================================*/
