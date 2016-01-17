@@ -25,7 +25,7 @@ var nodeScripts = [
 
 // Place all app JavaScript dependencies here
 var appScripts = [
-    'includes/*.js',
+    'includes/**/*.js',
     'main.js'
 ];
 
