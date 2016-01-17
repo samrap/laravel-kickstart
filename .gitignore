@@ -3,6 +3,6 @@
 Homestead.yaml
 Homestead.json
 .env
-.sublime-*
+*.sublime-*
 public/css
 public/js
