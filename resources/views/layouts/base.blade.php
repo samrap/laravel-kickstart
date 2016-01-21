@@ -7,7 +7,7 @@
 
         <title>@yield('title')</title>
 
-        <link href="css/main.css" rel="stylesheet">
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
         @yield('head')
 
@@ -26,7 +26,7 @@
 
         @yield('footer')
 
-        <script type="text/javascript" src="js/nodeFrameworks.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="{{ asset('js/nodeFrameworks.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>

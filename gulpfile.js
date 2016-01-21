@@ -14,7 +14,7 @@ var elixir = require('laravel-elixir');
 // Place all Sass dependencies here
 var appSass = [
     'main.scss'
-]
+];
 
 // Place all Node JavaScript dependencies here
 var nodeScripts = [
