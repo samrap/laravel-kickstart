@@ -26,7 +26,7 @@ $ composer install
 $ npm install
 ```
 
-Afterwards, you can rename the directory to whatever you like.
+Afterwards, you can rename the directory to whatever you like. Tip: don't forget to do the standard Laravel installtion steps as well, creating your `.env` file and generating the application key with `php artisan key:generate`!
 
 ### Usage:
 You're now ready to make use of the awesome features Laravel Kickstart has to offer! Here are some basic overviews of how to make the most out of your installation:
