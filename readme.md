@@ -10,7 +10,7 @@ Laravel is an amazing framework that lets you build scalable applications rapidl
 ### Features
 - **Gulp/Elixir Configuration:** Compile your Sass and JavaScript files with [Laravel Elixir](https://laravel.com/docs/5.1/elixir). Your styles and scripts will automatically be combined with the project's Node dependencies and injected into the base Blade file.
 - **DRY Philosophy:** Modularized Sass and JavaScript files out of the box to prevent repetitive front end code. A main.js file utilizes [DOM-based routing](http://www.paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/), while a highly organized Sass file structure (based on [Sage](https://roots.io/sage/)) breaks your styles into organized groups.
-- **Blade Wrapper:** A base [Blade](https://laravel.com/docs/5.1/blade) template that acts as a wrapper for all pages in your website, automatically pulling in your styles and scripts and providing you with many sections to extend.
+- **Blade Wrapper:** A base [Blade](https://laravel.com/docs/5.1/blade) template that acts as a wrapper for all your pages automatically pulls in your styles and scripts and provides many sections to extend.
 - **Enhanced Debugging:** Laravel Kickstart implements the [Whoops](https://github.com/filp/whoops) error handler and [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) for advanced debugging in app debug mode.
 
 ### Installation
