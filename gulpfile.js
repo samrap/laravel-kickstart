@@ -19,8 +19,7 @@ var appSass = [
 // Place all Node JavaScript dependencies here
 var nodeScripts = [
     'jquery/dist/jquery.min.js',
-    'bootstrap-sass/assets/javascripts/bootstrap.min.js',
-    'picturefill/dist/picturefill.min.js'
+    'bootstrap-sass/assets/javascripts/bootstrap.min.js'
 ];
 
 // Place all app JavaScript dependencies here
