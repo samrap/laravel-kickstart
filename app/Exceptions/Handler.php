@@ -50,7 +50,9 @@ class Handler extends ExceptionHandler
         }
 
         if (config('app.debug') && ! $e instanceof ValidationException) {
-            return $this->renderExceptionWithWhoops($e);
+            $json = $request->ajax();
+
+            return $this->renderExceptionWithWhoops($e, $json);
         }
 
         return parent::render($request, $e);
@@ -59,13 +61,21 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception using Whoops.
      *
-     * @param  \Exception $e
+     * @param  \Exception $e    The Exception object
+     * @param  string     $json Whether to use the JsonResponseHandler instead
+     *                          of the PrettyPageHandler.
      * @return \Illuminate\Http\Response
      */
-    protected function renderExceptionWithWhoops(Exception $e)
+    protected function renderExceptionWithWhoops(Exception $e, $json = false)
     {
         $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+
+        if ($json) {
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler);
+        } else {
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        }
+
         return new \Illuminate\Http\Response(
             $whoops->handleException($e),
             $e->getStatusCode(),
