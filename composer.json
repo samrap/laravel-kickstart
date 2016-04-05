@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "samrap/lks",
+    "description": "Laravel Kickstart. An advanced front end workflow for one of the most popular and fastest-growing PHP frameworks available.",
+    "keywords": ["framework", "laravel", "laravel package", "laravel wrapper"],
     "license": "MIT",
     "type": "project",
     "require": {
