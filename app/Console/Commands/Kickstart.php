@@ -19,7 +19,7 @@ class Kickstart extends Command
      *
      * @var string
      */
-    protected $description = 'Kickstart your Laravel website!';
+    protected $description = 'Kickstart your Laravel website';
 
     /**
      * Create a new command instance.
