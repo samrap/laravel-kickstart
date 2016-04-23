@@ -49,13 +49,33 @@ class Handler extends ExceptionHandler
             $e = new NotFoundHttpException($e->getMessage(), $e);
         }
 
-        if (config('app.debug') && ! $e instanceof ValidationException) {
+        if ($this->shouldUseCustomHandler($e)) {
             $json = $request->ajax();
 
             return $this->renderExceptionWithWhoops($e, $json);
         }
 
         return parent::render($request, $e);
+    }
+
+    /**
+     * Determine if the custom exception handler should be used.
+     *
+     * @param  \Exception $e
+     * @return boolean
+     */
+    protected function shouldUseCustomHandler(Exception $e)
+    {
+        // If the error is an instance of any of these exceptions, the custom
+        // error handler will not be used.
+        $useDefault = [
+            $e instanceof ValidationException,
+            $e instanceof NotFoundHttpException,
+            $e instanceof ModelNotFoundException,
+            $e instanceof AuthorizationException,
+        ];
+
+        return config('app.debug') && ! in_array(true, $useDefault);
     }
 
     /**
