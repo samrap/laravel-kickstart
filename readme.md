@@ -19,7 +19,7 @@ Kick-off your project with Laravel Kickstart in just a few short commands:
 Download the zip archive via your web browser or run:
 ```
 $ git clone https://github.com/samrap/lks.git
-````
+```
 Then:
 ```
 $ cd lks
@@ -42,7 +42,7 @@ You can now inject content into the layout's sections using `@section` directive
 ##### Gulp/Elixir:
 Your Sass and JavaScript assets reside in the `resources/assets/sass` and `resources/assets/js` directories, respectively. Run `gulp watch` to automatically compile your Sass and JavaScript assets. Every time you modify and save an existing Sass or JavaScript file in the `resources/assets` directory, it will be compiled and saved into `public/css` and `public/js` and automatically included in your `layouts.base` view. To minify your compiled assets, just add the `--production` flag after the `gulp` command.
 
-If you need to install additional Node script dependencies, simply run the `npm install` as usual, then edit the `nodeScripts` array in the gulpfile by adding the path to the new dependency. Then run `gulp` to recompile all your assets. (Note: npm scripts are compiled separate from asset scripts. They are compiled into public/js/nodeScripts.js and included in the base Blade view right before main.js)
+If you need to install additional NPM packages, simply run the `npm install` as usual, then edit the `dependencies.scripts` array in the gulpfile by adding the path to the new dependency. Then run `gulp` to recompile all your assets. (Note: npm scripts are compiled separate from asset scripts. They are compiled into public/js/dependencies.js and included in the base Blade view right before main.js)
 ##### Don't Repeat Yourself (DRY):
 In addition to the Blade wrapper template, Laravel Kickstart comes configured with an organized Sass and JavaScript file/directory structure to help you modularize and stay DRY.
 
@@ -53,9 +53,9 @@ The Sass setup is also very powerful. A main.scss file in the base Sass director
 ###### - Additional Files
 Laravel Kickstart comes with a nice list of Sass and JavaScript files out of the box, but you may find the need to add some more. Don't worry, it's a sinch!
 
-To include additional Sass files, either add an `@import` statement in the `resources/assets/sass/main.scss` file, or update the `appSass` array in the project's gulpfile. (Note: The `appSass` array assumes paths relative to the base Sass directory)
+To include additional Sass files, add an `@import` statement in the `resources/assets/sass/main.scss` file.
 
-To add additional JavaScript files, remember you can place them directly in `resources/assets/js/includes`. Of course, you can also explicitly add the path to the `appScripts` array in your gulpfile.
+To add additional JavaScript files, remember you can place them directly in `resources/assets/js/includes`. Of course, you can also explicitly add the path to the `dependencies.scripts` array in your gulpfile.
 
 ----
 ### Contributing
