@@ -26,7 +26,7 @@
 
         @yield('footer')
 
-        <script type="text/javascript" src="{{ asset('js/nodeFrameworks.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/dependencies.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>

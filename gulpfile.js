@@ -11,26 +11,25 @@ var elixir = require('laravel-elixir');
  |
  */
 
-// Place all Sass dependencies here
-var appSass = [
-    'main.scss'
-];
+var application = {
+    // Place all application scripts here
+    'scripts': [
+        'includes/**.js',
+        'main.js'
+    ]
+};
 
-// Place all Node JavaScript dependencies here
-var nodeScripts = [
-    'jquery/dist/jquery.min.js',
-    'bootstrap-sass/assets/javascripts/bootstrap.min.js'
-];
-
-// Place all app JavaScript dependencies here
-var appScripts = [
-    'includes/**.js',
-    'main.js'
-];
+var dependencies = {
+    // Place all NPM packages here
+    'scripts': [
+        'jquery/dist/jquery.min.js',
+        'bootstrap-sass/assets/javascripts/bootstrap.min.js'
+    ]
+}
 
 // Compile all the things
 elixir(function(mix) {
-    mix.sass(appSass, 'public/css/main.css')
-        .scripts(nodeScripts, 'public/js/nodeFrameworks.js', 'node_modules')
-        .scripts(appScripts, 'public/js/main.js');
+    mix.sass('main.scss', 'public/css/main.css')
+        .scripts(dependencies.scripts, 'public/js/dependencies.js', 'node_modules')
+        .scripts(application.scripts, 'public/js/main.js');
 });
