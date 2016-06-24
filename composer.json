@@ -1,59 +1,27 @@
 {
-    "name": "samrap/lks",
-    "description": "Laravel Kickstart. An advanced front end workflow for one of the most popular and fastest-growing PHP frameworks available.",
-    "keywords": ["framework", "laravel", "laravel package", "laravel wrapper"],
+    "name": "samrap/laravel-kickstart",
+    "description": "An more advanced workflow for one of the most popular and fastest-growing PHP frameworks available.",
+    "keywords": ["laravel", "workflow", "configuration"],
     "license": "MIT",
-    "type": "project",
+    "authors": [
+        {
+            "name": "Sam Rapaport",
+            "email": "rapaport.sam7@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Samrap\\Kickstart\\": "src/"
+        }
+    },
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
-        "laravelcollective/html": "^5.1",
-        "filp/whoops": "^2.0"
+        "illuminate/support": "^5.2",
+        "phpunit/phpunit": "^4.8",
+        "illuminate/console": "^5.2"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^2.2",
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "phpspec/phpspec": "~2.1",
-        "symfony/dom-crawler": "~3.0",
-        "symfony/css-selector": "~3.0"
+        "mockery/mockery": "^0.9.4"
     },
-    "autoload": {
-        "classmap": [
-            "database"
-        ],
-        "psr-4": {
-            "App\\": "app/"
-        },
-        "files": [
-            "app/Support/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan optimize"
-        ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled"
-        ],
-        "post-update-cmd": [
-            "php artisan optimize"
-        ],
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "php artisan key:generate"
-        ]
-    },
-    "config": {
-        "preferred-install": "dist"
-    }
+    "minimum-stability": "dev"
 }
