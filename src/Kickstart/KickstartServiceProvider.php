@@ -13,7 +13,10 @@ class KickstartServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Publish app files.
+        $this->publishes([
+            __DIR__.'/../app/' => app_path(),
+        ], 'app');
     }
 
     /**
