@@ -18,9 +18,12 @@
         "php": ">=5.5.9",
         "illuminate/support": "^5.2",
         "phpunit/phpunit": "^4.8",
-        "illuminate/console": "^5.2"
+        "illuminate/console": "^5.2",
+        "laravelcollective/html": "^5.1",
+        "filp/whoops": "^2.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^2.2",
         "mockery/mockery": "^0.9.4"
     },
     "minimum-stability": "dev"
