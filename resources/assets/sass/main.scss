@@ -1,0 +1,59 @@
+/**
+ * Main Sass file
+ *
+ * This file should only be used for importing the core styles and custom
+ * modules. More information about these individual files can be found in their
+ * docblocks.
+ *
+ * Custom CSS modules should be placed in the modules/ directory and imported
+ * at the bottom of this file, while other styles should be placed in their
+ * respective files in the common, components, and layouts directories.
+ *
+ * @author
+ */
+
+/*============================================================================
+Node Modules
+============================================================================*/
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*============================================================================
+Fonts
+============================================================================*/
+
+@import 'common/fonts';
+
+/*============================================================================
+Variables and Mixins
+============================================================================*/
+
+@import 'common/variables';
+@import 'common/mixins';
+
+/*============================================================================
+Base and Styles and Components
+============================================================================*/
+
+@import 'layouts/general';
+@import 'common/global';
+@import 'components/buttons';
+@import 'components/forms';
+
+/*============================================================================
+Core Styles
+============================================================================*/
+
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/pages';
+@import 'layouts/footer';
+@import 'layouts/responsive';
+
+/*============================================================================
+Custom modules
+
+Import your custom modules from the modules/ directory here.
+
+Example:
+    `@import 'modules/banner'`
+============================================================================*/
