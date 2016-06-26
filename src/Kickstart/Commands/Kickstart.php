@@ -2,7 +2,6 @@
 
 namespace Samrap\Kickstart\Commands;
 
-use Artisan;
 use Illuminate\Console\Command;
 
 class Kickstart extends Command
@@ -19,7 +18,7 @@ class Kickstart extends Command
      *
      * @var string
      */
-    protected $description = 'Kickstart your Laravel website';
+    protected $description = 'Kickstart your Laravel application';
 
     /**
      * Create a new command instance.
@@ -38,9 +37,9 @@ class Kickstart extends Command
      */
     public function handle()
     {
-        Artisan::call('vendor:publish', ['--tag' => 'app']);
-        Artisan::call('vendor:publish', ['--tag' => 'resources']);
-        Artisan::call('vendor:publish', ['--tag' => 'npm', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'app']);
+        $this->call('vendor:publish', ['--tag' => 'resources']);
+        $this->call('vendor:publish', ['--tag' => 'npm', '--force' => true]);
 
         $this->info('Website Kickstarted. Go ahead, create something awesome!');
     }
