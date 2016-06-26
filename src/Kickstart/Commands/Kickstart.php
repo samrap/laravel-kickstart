@@ -37,12 +37,21 @@ class Kickstart extends Command
      */
     public function handle()
     {
-        $this->call('vendor:publish', ['--tag' => ['app', 'resources']]);
-        $this->call('vendor:publish', ['--tag' => ['npm'], '--force' => true]);
+        $this->info('Publishing assets...');
+
+        $this->callSilent('vendor:publish', [
+            '--tag' => ['app', 'resources'],
+        ]);
+        $this->callSilent('vendor:publish', [
+            '--tag' => ['npm'],
+            '--force' => true
+        ]);
+
+        $this->info('Installing NPM dependencies...');
 
         shell_exec('npm install');
         shell_exec('gulp');
 
-        $this->info('Website Kickstarted. Go ahead, create something awesome!');
+        $this->info('Website Kickstarted. Wasn\'t that easy?');
     }
 }
