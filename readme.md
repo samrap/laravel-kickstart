@@ -29,3 +29,11 @@ Then add the service provider to your providers array in `config/app.php`:
 Finally, just run the `php artisan:kickstart` command and let Laravel Kickstart do the rest.
 
 You're now ready to utilize all the great features Laravel Kickstart has to offer!
+
+### Usage
+---
+Head over to the [Laravel Kickstart Wiki](https://github.com/samrap/laravel-kickstart/wiki) for the quick and useful documentation on utilizing Laravel Kickstart's awesome features.
+
+### Contributing
+---
+Contributions are more than welcome! You can submit feature requests to [rapaport.sam7@gmail.com](mailto:rapaport.sam7@gmail.com), or fork the repo yourself!
