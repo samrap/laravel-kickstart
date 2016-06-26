@@ -14,6 +14,7 @@ Laravel is an amazing framework that lets you build scalable applications rapidl
 - **DRY Philosophy:** Modularized Sass and JavaScript files out of the box to prevent repetitive front end code. A main.js file utilizes [DOM-based routing](http://www.paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/), while a highly organized Sass file structure (based on [Sage](https://roots.io/sage/)) breaks your styles into organized groups. Staying DRY never felt so good!
 - **Blade Wrapper:** A base [Blade](https://laravel.com/docs/5.1/blade) template that acts as a wrapper for all your pages automatically pulls in your styles and scripts and provides many sections to extend.
 - **Enhanced Debugging:** Laravel Kickstart implements the [Whoops](https://github.com/filp/whoops) error handler and [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) for advanced debugging in app debug mode.
+- **Even More:** That's right. Read on to find out about the loads of other small features in Laravel Kickstart that make Laravel development even more streamlined.
 
 ### Installation
 ---
@@ -25,6 +26,6 @@ Then add the service provider to your providers array in `config/app.php`:
 
 `Samrap\Kickstart\KickstartServiceProvider::class`
 
-Finally, there are some files that need to be published to your project. We will go over all of these later, but for now we will just move them to the right place. This can be done using the `vendor:publish` command:
+Finally, just run the `php artisan:kickstart` command and let Laravel Kickstart do the rest.
 
-`php artisan vendor:publish`
+You're now ready to utilize all the great features Laravel Kickstart has to offer!
