@@ -1,8 +1,2 @@
 /vendor
-/node_modules
-Homestead.yaml
-Homestead.json
-.env
-*.sublime-*
-public/css
-public/js
+composer.lock
