@@ -38,9 +38,9 @@ class Kickstart extends Command
      */
     public function handle()
     {
-        Artisan::call('vendor:publish --tag=app');
-        Artisan::call('vendor:publish --tag=resources');
-        Artisan::call('vendor:publish --tag=npm --force');
+        Artisan::call('vendor:publish', ['--tag' => 'app']);
+        Artisan::call('vendor:publish', ['--tag' => 'resources']);
+        Artisan::call('vendor:publish', ['--tag' => 'npm', '--force']);
 
         $this->info('Website Kickstarted. Go ahead, create something awesome!');
     }
