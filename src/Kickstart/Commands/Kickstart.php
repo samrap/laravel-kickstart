@@ -40,6 +40,9 @@ class Kickstart extends Command
         $this->call('vendor:publish', ['--tag' => ['app', 'resources']]);
         $this->call('vendor:publish', ['--tag' => ['npm'], '--force' => true]);
 
+        shell_exec('npm install');
+        shell_exec('gulp');
+
         $this->info('Website Kickstarted. Go ahead, create something awesome!');
     }
 }
