@@ -38,11 +38,9 @@ class Kickstart extends Command
      */
     public function handle()
     {
-        shell_exec('cp .env.example .env');
-        shell_exec('npm install');
-        shell_exec('gulp');
-
-        Artisan::call('key:generate');
+        Artisan::call('vendor:publish --tag=app');
+        Artisan::call('vendor:publish --tag=resources');
+        Artisan::call('vendor:publish --tag=npm --force');
 
         $this->info('Website Kickstarted. Go ahead, create something awesome!');
     }
