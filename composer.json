@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Samrap\\Kickstart\\": "src/"
+            "Samrap\\Kickstart\\": "src/Kickstart"
         }
     },
     "require": {
