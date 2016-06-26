@@ -19,7 +19,7 @@
         "phpunit/phpunit": "^4.8",
         "laravelcollective/html": "^5.1",
         "filp/whoops": "^2.0",
-        "barryvdh/laravel-debugbar": "^2.2",
+        "barryvdh/laravel-debugbar": "^2.2"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.4"
