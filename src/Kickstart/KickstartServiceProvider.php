@@ -26,8 +26,8 @@ class KickstartServiceProvider extends ServiceProvider
         // Publish NPM files. Note that for these to apply, the --force flag
         // must be specified.
         $this->publishes([
-            __DIR__.'/../../publish/gulpfile',
-            __DIR__.'/../../publish/package.json',
+            __DIR__.'/../../publish/gulpfile.js' => base_path('gulpfile.js'),
+            __DIR__.'/../../publish/package.json' => base_path('package.json'),
         ], 'npm');
     }
 
