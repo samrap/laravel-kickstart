@@ -1,5 +1,10 @@
 # Laravel Kickstart
 
+[![Latest Stable Version](https://poser.pugx.org/samrap/laravel-kickstart/v/stable)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![Total Downloads](https://poser.pugx.org/samrap/laravel-kickstart/downloads)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![Latest Unstable Version](https://poser.pugx.org/samrap/laravel-kickstart/v/unstable)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![License](https://poser.pugx.org/samrap/laravel-kickstart/license)](https://packagist.org/packages/samrap/laravel-kickstart)
+
 ### What is Laravel Kickstart?
 ---
 Laravel Kickstart is a Laravel starter configuration that helps you build Laravel websites faster. It comes with an [Elixir](https://laravel.com/docs/5.1/elixir) configuration, the latest versions of [Bootstrap](http://getbootstrap.com) and [JQuery](https://jquery.com), a [Blade](https://laravel.com/docs/5.1/blade) wrapper template, debug tools, and much more.
