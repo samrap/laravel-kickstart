@@ -15,12 +15,12 @@ class KickstartServiceProvider extends ServiceProvider
     {
         // Publish app files.
         $this->publishes([
-            __DIR__.'/../../app/' => app_path(),
+            __DIR__.'/../../publish/app/' => app_path(),
         ], 'app');
 
         // Publish view and asset files.
         $this->publishes([
-            __DIR__.'/../../resources/' => resource_path(),
+            __DIR__.'/../../publish/resources/' => resource_path(),
         ], 'resources');
     }
 
