@@ -40,7 +40,7 @@ class Kickstart extends Command
     {
         Artisan::call('vendor:publish', ['--tag' => 'app']);
         Artisan::call('vendor:publish', ['--tag' => 'resources']);
-        Artisan::call('vendor:publish', ['--tag' => 'npm', '--force']);
+        Artisan::call('vendor:publish', ['--tag' => 'npm', '--force' => true]);
 
         $this->info('Website Kickstarted. Go ahead, create something awesome!');
     }
