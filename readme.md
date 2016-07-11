@@ -31,7 +31,7 @@ composer require samrap/laravel-kickstart
 
 Then add the service provider to your providers array in `config/app.php`:
 
-```bash
+```php
 Samrap\Kickstart\KickstartServiceProvider::class
 ```
 
