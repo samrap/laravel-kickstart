@@ -25,11 +25,15 @@ Laravel is an amazing framework that lets you build scalable applications rapidl
 ---
 Install via composer:
 
-`composer require samrap/laravel-kickstart`
+```bash
+composer require samrap/laravel-kickstart
+```
 
 Then add the service provider to your providers array in `config/app.php`:
 
-`Samrap\Kickstart\KickstartServiceProvider::class`
+```bash
+Samrap\Kickstart\KickstartServiceProvider::class
+```
 
 Finally, just run the `php artisan:kickstart` command and let Laravel Kickstart do the rest.
 
