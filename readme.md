@@ -1,5 +1,10 @@
 # Laravel Kickstart
 
+[![Latest Stable Version](https://poser.pugx.org/samrap/laravel-kickstart/v/stable)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![Total Downloads](https://poser.pugx.org/samrap/laravel-kickstart/downloads)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![Latest Unstable Version](https://poser.pugx.org/samrap/laravel-kickstart/v/unstable)](https://packagist.org/packages/samrap/laravel-kickstart)
+[![License](https://poser.pugx.org/samrap/laravel-kickstart/license)](https://packagist.org/packages/samrap/laravel-kickstart)
+
 ### What is Laravel Kickstart?
 ---
 Laravel Kickstart is a Laravel starter configuration that helps you build Laravel websites faster. It comes with an [Elixir](https://laravel.com/docs/5.1/elixir) configuration, the latest versions of [Bootstrap](http://getbootstrap.com) and [JQuery](https://jquery.com), a [Blade](https://laravel.com/docs/5.1/blade) wrapper template, debug tools, and much more.
@@ -20,11 +25,15 @@ Laravel is an amazing framework that lets you build scalable applications rapidl
 ---
 Install via composer:
 
-`composer require samrap/laravel-kickstart`
+```bash
+composer require samrap/laravel-kickstart
+```
 
 Then add the service provider to your providers array in `config/app.php`:
 
-`Samrap\Kickstart\KickstartServiceProvider::class`
+```php
+Samrap\Kickstart\KickstartServiceProvider::class
+```
 
 Finally, just run the `php artisan:kickstart` command and let Laravel Kickstart do the rest.
 

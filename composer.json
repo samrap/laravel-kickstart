@@ -1,7 +1,7 @@
 {
     "name": "samrap/laravel-kickstart",
     "description": "An more advanced workflow for one of the most popular and fastest-growing PHP frameworks available.",
-    "keywords": ["laravel", "workflow", "configuration"],
+    "keywords": ["laravel", "elixir", "package"],
     "license": "MIT",
     "authors": [
         {
